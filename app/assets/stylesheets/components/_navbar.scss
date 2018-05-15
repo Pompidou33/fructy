@@ -7,9 +7,12 @@
   padding: 0px 30px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
+.logo_fructy {
+  margin: 70px;
+}
 /* Logo */
 .navbar-wagon-brand img {
   height: 50px;
@@ -26,7 +29,7 @@
 .navbar-wagon-right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
 }
 
 /* Basic navbar item */
@@ -41,7 +44,7 @@
   font-size: 14px;
 }
 .navbar-wagon-link:hover {
-  color: #da552f;
+  color: #0652DD;
   text-decoration: none;
 }
 

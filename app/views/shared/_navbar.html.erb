@@ -1,17 +1,21 @@
 <div class="navbar-wagon">
-  <!-- Logo -->
-  <%= link_to root_path, class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo.png", height: 50 %>
-  <% end %>
+
 
   <!-- Right Navigation -->
   <div class="navbar-wagon-right hidden-xs hidden-sm">
+    <%= link_to "A propos", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Pourquoi nous", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Comment", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to root_path, class: "navbar-wagon-brand" do %>
+      <%= image_tag "logo_fructy.png", height: 50, class: "logo_fructy" %>
+    <% end %>
+    <%= link_to "Blog", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+    <%= link_to "Fructy Market", "#", class: "navbar-wagon-item navbar-wagon-link" %>
 
     <% if user_signed_in? %>
 
       <!-- Links when logged in -->
-      <%= link_to "Host", "#", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Trips", "#", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Dashboard", "#", class: "navbar-wagon-item navbar-wagon-link" %>
       <%= link_to "Messages", "#", class: "navbar-wagon-item navbar-wagon-link" %>
 
       <!-- Avatar with dropdown menu -->
@@ -39,7 +43,7 @@
       </div>
     <% else %>
       <!-- Login link (when logged out) -->
-      <%= link_to t(".sign_in", default: "Login"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to t(".sign_in", default: "Se connecter"), new_user_session_path, class: "navbar-wagon-item navbar-wagon-link" %>
     <% end %>
   </div>
 
@@ -55,4 +59,3 @@
     </div>
   </div>
 </div>
-

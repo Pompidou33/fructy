@@ -1,0 +1,35 @@
+.banner {
+  height: 60vh;
+  background-color: white;
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  // background-image: url("trianglify.png");
+  background-size: cover !important;
+  display: flex;
+  align-items: center;
+
+}
+
+.banner-left {
+width: 500px;
+padding-left: 150px;
+padding-bottom: 50px;
+}
+
+.btn-test-2 {
+  background-color: blue;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+  
+}
+
+.btn-test-2:hover {
+  background-color: yellow;
+  color: blue;
+  text-decoration: none;
+}
+
+h3 {
+  letter-spacing: 5px;
+}
